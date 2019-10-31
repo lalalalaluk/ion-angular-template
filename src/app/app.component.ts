@@ -1,4 +1,7 @@
-import { Component } from '@angular/core';
+import { Component, ViewChild } from '@angular/core';
+import { MatSidenav } from '@angular/material/sidenav';
+import { Router } from '@angular/router';
+
 
 @Component({
   selector: 'app-root',
@@ -6,5 +9,22 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'ion-template';
+  @ViewChild('sidenav', { static: false }) sidenav: MatSidenav;
+
+
+  constructor(
+    private router: Router,
+  ) {
+
+  }
+
+  close(component: string) {
+    if (component) {
+      this.router.navigate([component]);
+    }
+    this.sidenav.close();
+  }
+
 }
+
+
