@@ -1,3 +1,6 @@
+import * as Phaser from 'phaser';
+import { animationConfig } from '../animation/animation';
+
 
 export class BootScene extends Phaser.Scene {
     helloWorld: Phaser.GameObjects.Text;
@@ -28,42 +31,19 @@ export class BootScene extends Phaser.Scene {
 
     create() {
         // image 跟 sprite 最大的差別就是 sprite 可以sprite sheet
-
         this.img1 = this.add.image(300, 300, 'img1');
         this.sprite1 = this.add.sprite(600, 300, 'img1');
 
         // sprite animation by imgs
-        this.anims.create({
-            key: 'dead',
-            frames: [
-                { key: 'dead0', frame: 0 },
-                { key: 'dead1', frame: 1 },
-                { key: 'dead2', frame: 2 },
-                { key: 'dead3', frame: 3 },
-                { key: 'dead4', frame: 4 },
-                { key: 'dead5', frame: 5 },
-                { key: 'dead6', frame: 6 },
-                { key: 'dead7', frame: 7 },
-                { key: 'dead8', frame: 8 },
-                { key: 'dead9', frame: 9 },
-                { key: 'dead10', frame: 10 },
-                { key: 'dead11', frame: 11 },
-                { key: 'dead12', frame: 12 },
-                { key: 'dead13', frame: 13 },
-                { key: 'dead14', frame: 14 },
-            ],
-            frameRate: 12,
-            repeat: -1
-        });
+        this.anims.create(animationConfig.boyDead);
         this.add.sprite(900, 300, 'dead0').play('dead');
 
-        const config = {
+        this.anims.create({
             key: 'jump',
             frames: this.anims.generateFrameNumbers('jump_sheet', { start: 0, end: 14, first: 0 }),
             frameRate: 12,
             repeat: -1
-        };
-        this.anims.create(config);
+        });
         const jump = this.add.sprite(1500, 300, 'jump_sheet');
         jump.anims.play('jump', false);
 

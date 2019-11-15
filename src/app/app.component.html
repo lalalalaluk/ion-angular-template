@@ -2,13 +2,13 @@
     <mat-sidenav #sidenav (keydown.escape)="close('escape')" disableClose>
         <mat-list>
             <mat-list-item>
-                <!-- <a [routerLink]="BasicWorld" routerLinkActive="active-link">BasicWorld</a> -->
                 <p><button routerLinkActive="active-link" mat-button (click)="close('BasicWorld')">BasicWorld</button></p>
             </mat-list-item>
             <mat-list-item>
-                <!-- <a [routerLink]="BasicSprite" routerLinkActive="active-link">BasicSprite</a> -->
-
                 <p><button routerLinkActive="active-link" mat-button (click)="close('BasicSprite')">BasicSprite</button></p>
+            </mat-list-item>
+            <mat-list-item>
+                <p><button routerLinkActive="active-link" mat-button (click)="close('BasicFixedSize')">BasicFixedSize</button></p>
             </mat-list-item>
         </mat-list>
     </mat-sidenav>

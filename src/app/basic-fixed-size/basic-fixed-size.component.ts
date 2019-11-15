@@ -22,16 +22,15 @@ class BootScene extends Phaser.Scene {
 
 
 @Component({
-  selector: 'app-basic-world',
-  templateUrl: './basic-world.component.html',
-  styleUrls: ['./basic-world.component.css']
+  selector: 'app-basic-fixed-size',
+  templateUrl: './basic-fixed-size.component.html',
+  styleUrls: ['./basic-fixed-size.component.css']
 })
-export class BasicWorldComponent implements OnInit {
+export class BasicFixedSizeComponent implements OnInit {
 
   game: Phaser.Types.Core.GameConfig = {
-    width: '99vw',
-    height: '99vw',
-
+    width: 800,
+    height: 600,
     type: Phaser.AUTO,
     scene: BootScene,
   };
@@ -41,4 +40,5 @@ export class BasicWorldComponent implements OnInit {
   ngOnInit() {
     console.log('game', this.game);
   }
+
 }

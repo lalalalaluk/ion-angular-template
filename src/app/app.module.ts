@@ -9,12 +9,14 @@ import {MatListModule} from '@angular/material/list';
 import { BasicWorldComponent } from './basic-world/basic-world.component';
 import { AppRoutingModule } from './app.routing.model';
 import { BasicSpriteComponent } from './basic-sprite/basic-sprite.component';
+import { BasicFixedSizeComponent } from './basic-fixed-size/basic-fixed-size.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     BasicWorldComponent,
-    BasicSpriteComponent
+    BasicSpriteComponent,
+    BasicFixedSizeComponent
   ],
   imports: [
     BrowserModule,
