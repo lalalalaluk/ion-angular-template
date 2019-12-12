@@ -10,7 +10,7 @@ import { Router } from '@angular/router';
 })
 export class AppComponent {
   @ViewChild('sidenav', { static: false }) sidenav: MatSidenav;
-
+  panelOpenState = false;
 
   constructor(
     private router: Router,

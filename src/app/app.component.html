@@ -1,16 +1,31 @@
-<mat-sidenav-container class="example-container" (backdropClick)="close()">
+<mat-sidenav-container class="example-container" (backdropClick)="close('')">
     <mat-sidenav #sidenav (keydown.escape)="close('escape')" disableClose>
-        <mat-list>
-            <mat-list-item>
-                <p><button routerLinkActive="active-link" mat-button (click)="close('BasicWorld')">BasicWorld</button></p>
-            </mat-list-item>
-            <mat-list-item>
-                <p><button routerLinkActive="active-link" mat-button (click)="close('BasicSprite')">BasicSprite</button></p>
-            </mat-list-item>
-            <mat-list-item>
-                <p><button routerLinkActive="active-link" mat-button (click)="close('BasicFixedSize')">BasicFixedSize</button></p>
-            </mat-list-item>
-        </mat-list>
+            <mat-accordion>
+                    <mat-expansion-panel>
+                      <mat-expansion-panel-header>
+                        <mat-panel-title>
+                          basic
+                        </mat-panel-title>
+                        <mat-panel-description>
+                          basic practice
+                        </mat-panel-description>
+                      </mat-expansion-panel-header>
+                  
+                      <mat-list>
+                            <mat-list-item>
+                                <p><button routerLinkActive="active-link" mat-button (click)="close('BasicWorld')">BasicWorld</button></p>
+                            </mat-list-item>
+                            <mat-list-item>
+                                <p><button routerLinkActive="active-link" mat-button (click)="close('BasicSprite')">BasicSprite</button></p>
+                            </mat-list-item>
+                            <mat-list-item>
+                                <p><button routerLinkActive="active-link" mat-button (click)="close('BasicFixedSize')">BasicFixedSize</button></p>
+                            </mat-list-item>
+                        </mat-list>
+                    </mat-expansion-panel>
+
+                  </mat-accordion>
+
     </mat-sidenav>
 
     <mat-sidenav-content>

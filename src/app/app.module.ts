@@ -6,17 +6,21 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {MatButtonModule} from '@angular/material/button';
 import {MatSidenavModule} from '@angular/material/sidenav';
 import {MatListModule} from '@angular/material/list';
-import { BasicWorldComponent } from './basic-world/basic-world.component';
+import {MatExpansionModule} from '@angular/material/expansion';
 import { AppRoutingModule } from './app.routing.model';
-import { BasicSpriteComponent } from './basic-sprite/basic-sprite.component';
-import { BasicFixedSizeComponent } from './basic-fixed-size/basic-fixed-size.component';
+
+import { BasicWorldComponent } from './basic/basic-world/basic-world.component';
+import { BasicSpriteComponent } from './basic/basic-sprite/basic-sprite.component';
+import { BasicFixedSizeComponent } from './basic/basic-fixed-size/basic-fixed-size.component';
+
 
 @NgModule({
   declarations: [
     AppComponent,
     BasicWorldComponent,
     BasicSpriteComponent,
-    BasicFixedSizeComponent
+    BasicFixedSizeComponent,
+
   ],
   imports: [
     BrowserModule,
@@ -25,6 +29,7 @@ import { BasicFixedSizeComponent } from './basic-fixed-size/basic-fixed-size.com
     MatSidenavModule,
     MatListModule,
     AppRoutingModule,
+    MatExpansionModule,
   ],
   providers: [],
   schemas: [CUSTOM_ELEMENTS_SCHEMA],
