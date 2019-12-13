@@ -36,7 +36,33 @@ export class BasicWorldComponent implements OnInit {
     scene: BootScene,
   };
 
-  constructor() { }
+  constructor() {
+    document.addEventListener('deviceready', () => {
+      alert('iiiiiii')
+      this.game = {
+        width: '99vw',
+        height: '99vw',
+
+        type: Phaser.AUTO,
+        scene: BootScene,
+      };
+    }, false);
+
+    document.addEventListener('deviceread', () => {
+      alert('aaaa')
+      this.game = {
+        width: '99vw',
+        height: '99vw',
+
+        type: Phaser.AUTO,
+        scene: BootScene,
+      };
+    }, false);
+
+    document.addEventListener('keyup', () => {
+      alert('keys pressed');
+    });
+  }
 
   ngOnInit() {
     console.log('game', this.game);
