@@ -11,13 +11,15 @@ import { BootScene } from './scenes/BootScene';
 export class BasicSpriteComponent implements OnInit {
 
   game: Phaser.Types.Core.GameConfig = {
-    width: '99%',
-    height: '99%',
+    width: 1920,
+    height: 1080,
     type: Phaser.AUTO,
     scene: BootScene,
+    scale: {
+      mode: Phaser.Scale.FIT,
+      autoCenter: Phaser.Scale.CENTER_BOTH
+    },
   };
-
-  constructor() { }
 
   ngOnInit() {
     console.log('game', this.game);

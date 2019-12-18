@@ -29,36 +29,16 @@ class BootScene extends Phaser.Scene {
 export class BasicWorldComponent implements OnInit {
 
   game: Phaser.Types.Core.GameConfig = {
-    width: '99vw',
-    height: '99vw',
-
-    type: Phaser.AUTO,
+    width: '100vw',
+    height: '100vw',
+    scale: {
+      mode: Phaser.Scale.FIT,
+      autoCenter: Phaser.Scale.CENTER_BOTH
+    },
     scene: BootScene,
   };
 
   constructor() {
-    document.addEventListener('deviceready', () => {
-      alert('iiiiiii')
-      this.game = {
-        width: '99vw',
-        height: '99vw',
-
-        type: Phaser.AUTO,
-        scene: BootScene,
-      };
-    }, false);
-
-    document.addEventListener('deviceread', () => {
-      alert('aaaa')
-      this.game = {
-        width: '99vw',
-        height: '99vw',
-
-        type: Phaser.AUTO,
-        scene: BootScene,
-      };
-    }, false);
-
     document.addEventListener('keyup', () => {
       alert('keys pressed');
     });

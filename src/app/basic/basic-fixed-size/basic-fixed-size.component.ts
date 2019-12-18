@@ -12,11 +12,11 @@ class BootScene extends Phaser.Scene {
       this.cameras.main.centerX,
       this.cameras.main.centerY,
       'Hello World', {
-        fontFamily: 'Connection',
-        fontSize: 50,
-        stroke: '#000000',
-        strokeThickness: 8,
-        fill: '#ffffff'
+      fontFamily: 'Connection',
+      fontSize: 50,
+      stroke: '#000000',
+      strokeThickness: 8,
+      fill: '#ffffff'
     }
     ).setInteractive();
     this.helloWorld.on('pointerup', () => {
@@ -39,7 +39,11 @@ export class BasicFixedSizeComponent implements OnInit {
     height: 600,
     type: Phaser.AUTO,
     scene: BootScene,
-    render: { pixelArt: true, antialias: false }
+    render: { pixelArt: true, antialias: false },
+    scale: {
+      mode: Phaser.Scale.FIT,
+      autoCenter: Phaser.Scale.CENTER_BOTH
+    },
   };
 
   constructor() { }

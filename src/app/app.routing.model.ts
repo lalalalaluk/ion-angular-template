@@ -6,7 +6,7 @@ import { BasicSpriteComponent } from './basic/basic-sprite/basic-sprite.componen
 import { BasicFixedSizeComponent } from './basic/basic-fixed-size/basic-fixed-size.component';
 
 const routes: Routes = [
-    { path: '', redirectTo: 'BasicWorld', pathMatch: 'full' },
+    { path: '', redirectTo: 'BasicSprite', pathMatch: 'full' },
     { path: 'BasicWorld', component: BasicWorldComponent },
     { path: 'BasicSprite', component: BasicSpriteComponent },
     { path: 'BasicFixedSize', component: BasicFixedSizeComponent },
