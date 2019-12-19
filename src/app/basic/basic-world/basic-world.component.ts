@@ -13,6 +13,7 @@ class BootScene extends Phaser.Scene {
       fill: '#ffffff'
     }
     ).setInteractive();
+    this.helloWorld.setOrigin(0.5, 0.5);
     this.helloWorld.on('pointerup', () => {
       this.scale.startFullscreen();
     }, this);
@@ -30,7 +31,7 @@ export class BasicWorldComponent implements OnInit {
 
   game: Phaser.Types.Core.GameConfig = {
     width: '100vw',
-    height: '100vw',
+    height: '100vh',
     scale: {
       mode: Phaser.Scale.FIT,
       autoCenter: Phaser.Scale.CENTER_BOTH
@@ -42,6 +43,7 @@ export class BasicWorldComponent implements OnInit {
     document.addEventListener('keyup', () => {
       alert('keys pressed');
     });
+
   }
 
   ngOnInit() {

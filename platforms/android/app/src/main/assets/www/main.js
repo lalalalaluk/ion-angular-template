@@ -568,7 +568,11 @@ var BasicFixedSizeComponent = /** @class */ (function () {
             height: 600,
             type: phaser__WEBPACK_IMPORTED_MODULE_2__["AUTO"],
             scene: BootScene,
-            render: { pixelArt: true, antialias: false }
+            render: { pixelArt: true, antialias: false },
+            scale: {
+                mode: phaser__WEBPACK_IMPORTED_MODULE_2__["Scale"].FIT,
+                autoCenter: phaser__WEBPACK_IMPORTED_MODULE_2__["Scale"].CENTER_BOTH
+            },
         };
     }
     BasicFixedSizeComponent.prototype.ngOnInit = function () {
@@ -669,8 +673,8 @@ __webpack_require__.r(__webpack_exports__);
 var BasicSpriteComponent = /** @class */ (function () {
     function BasicSpriteComponent() {
         this.game = {
-            width: 1600,
-            height: 1200,
+            width: '100',
+            height: '100',
             type: phaser__WEBPACK_IMPORTED_MODULE_2__["AUTO"],
             scene: _scenes_BootScene__WEBPACK_IMPORTED_MODULE_3__["BootScene"],
             scale: {
@@ -716,7 +720,7 @@ __webpack_require__.r(__webpack_exports__);
 var BootScene = /** @class */ (function (_super) {
     tslib__WEBPACK_IMPORTED_MODULE_0__["__extends"](BootScene, _super);
     function BootScene() {
-        var _this = _super.call(this, {
+        return _super.call(this, {
             key: 'BootScene'
         }) || this;
         // document.addEventListener('resize', () => {
@@ -726,10 +730,6 @@ var BootScene = /** @class */ (function (_super) {
         // window.focus();
         // this.resize();
         // window.addEventListener('resize', this.resize, false);
-        document.addEventListener('keyup', function () {
-            alert('basic sprite');
-        });
-        return _this;
     }
     // resize() {
     //     alert('ini')
@@ -747,9 +747,6 @@ var BootScene = /** @class */ (function (_super) {
     //     }
     // }
     BootScene.prototype.preload = function () {
-        // window.focus();
-        // this.resize();
-        // window.addEventListener('resize', this.resize, false);
         this.load.image('img1', 'assets/boy/Idle (1).png');
         this.load.image('dead0', 'assets/boy/dead01.png');
         this.load.image('dead1', 'assets/boy/dead02.png');
@@ -769,21 +766,28 @@ var BootScene = /** @class */ (function (_super) {
         this.load.spritesheet('jump_sheet', 'assets/boy/tttt.png', { frameWidth: 616, frameHeight: 566, endFrame: 10 });
     };
     BootScene.prototype.create = function () {
+        var cellWidth = this.cameras.main.width / 100;
+        var cellHeight = this.cameras.main.height / 100;
         // image 跟 sprite 最大的差別就是 sprite 可以sprite sheet
-        this.img1 = this.add.image(300, 300, 'img1');
-        // this.sprite1 = this.add.sprite(600, 300, 'img1');
-        // this.img1 = this.add.image(200, 500, 'dead0');
-        // this.sprite1 = this.add.sprite(600, 300, 'dead1');
-        // sprite animation by imgs
+        this.img1 = this.add.image(cellWidth * 30, cellHeight * 30, 'img1');
+        this.img1.displayWidth = cellWidth * 30;
+        this.img1.displayHeight = this.img1.height * this.img1.displayWidth / this.
+            img1.width;
+        // // sprite animation by imgs
         this.anims.create(_animation_animation__WEBPACK_IMPORTED_MODULE_2__["animationConfig"].boyDead);
-        this.add.sprite(600, 300, 'dead0').play('dead');
+        var animate1 = this.add.sprite(cellWidth * 50, cellHeight * 30, 'dead0').play('dead');
+        animate1.displayWidth = cellWidth * 30;
+        animate1.displayHeight = animate1.height * animate1.displayWidth / animate1.width;
+        // andorid瀏覽器有MAX_TEXTURE_SIZE限制，spritesheet不能太長
         this.anims.create({
             key: 'jump',
             frames: this.anims.generateFrameNumbers('jump_sheet', { start: 0, end: 10, first: 0 }),
             frameRate: 12,
             repeat: -1
         });
-        var jump = this.add.sprite(900, 300, 'jump_sheet');
+        var jump = this.add.sprite(cellWidth * 70, cellHeight * 30, 'jump_sheet');
+        jump.displayWidth = cellWidth * 30;
+        jump.displayHeight = jump.height * jump.displayWidth / jump.width;
         jump.anims.play('jump', false);
     };
     return BootScene;
@@ -843,9 +847,12 @@ var BootScene = /** @class */ (function (_super) {
 var BasicWorldComponent = /** @class */ (function () {
     function BasicWorldComponent() {
         this.game = {
-            width: '99vw',
-            height: '99vw',
-            type: phaser__WEBPACK_IMPORTED_MODULE_2__["AUTO"],
+            width: '100vw',
+            height: '100vh',
+            scale: {
+                mode: phaser__WEBPACK_IMPORTED_MODULE_2__["Scale"].FIT,
+                autoCenter: phaser__WEBPACK_IMPORTED_MODULE_2__["Scale"].CENTER_BOTH
+            },
             scene: BootScene,
         };
         document.addEventListener('keyup', function () {

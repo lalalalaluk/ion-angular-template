@@ -19,6 +19,7 @@ class BootScene extends Phaser.Scene {
       fill: '#ffffff'
     }
     ).setInteractive();
+    this.helloWorld.setOrigin(0.5, 0.5);
     this.helloWorld.on('pointerup', () => {
       this.scale.startFullscreen();
     }, this);

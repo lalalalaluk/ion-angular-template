@@ -20,6 +20,9 @@
   "installed_plugins": {
     "cordova-plugin-device": {
       "PACKAGE_NAME": "io.cordova.hellocordova"
+    },
+    "cordova-plugin-fullscreen": {
+      "PACKAGE_NAME": "io.cordova.hellocordova"
     }
   },
   "dependent_plugins": {},
@@ -37,9 +40,18 @@
       "id": "cordova-plugin-device.DeviceProxy",
       "pluginId": "cordova-plugin-device",
       "runs": true
+    },
+    {
+      "file": "plugins/cordova-plugin-fullscreen/www/AndroidFullScreen.js",
+      "id": "cordova-plugin-fullscreen.AndroidFullScreen",
+      "pluginId": "cordova-plugin-fullscreen",
+      "clobbers": [
+        "AndroidFullScreen"
+      ]
     }
   ],
   "plugin_metadata": {
-    "cordova-plugin-device": "2.0.3"
+    "cordova-plugin-device": "2.0.3",
+    "cordova-plugin-fullscreen": "1.1.0"
   }
 }

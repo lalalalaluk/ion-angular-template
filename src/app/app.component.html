@@ -1,37 +1,54 @@
 <mat-sidenav-container class="example-container" (backdropClick)="close('')">
-    <mat-sidenav #sidenav (keydown.escape)="close('escape')" disableClose>
-            <mat-accordion>
-                    <mat-expansion-panel>
-                      <mat-expansion-panel-header>
-                        <mat-panel-title>
-                          basic
-                        </mat-panel-title>
-                        <mat-panel-description>
-                          basic practice
-                        </mat-panel-description>
-                      </mat-expansion-panel-header>
-                  
-                      <mat-list>
-                            <mat-list-item>
-                                <p><button routerLinkActive="active-link" mat-button (click)="close('BasicWorld')">BasicWorld</button></p>
-                            </mat-list-item>
-                            <mat-list-item>
-                                <p><button routerLinkActive="active-link" mat-button (click)="close('BasicSprite')">BasicSprite</button></p>
-                            </mat-list-item>
-                            <mat-list-item>
-                                <p><button routerLinkActive="active-link" mat-button (click)="close('BasicFixedSize')">BasicFixedSize</button></p>
-                            </mat-list-item>
-                        </mat-list>
-                    </mat-expansion-panel>
+  <mat-sidenav #sidenav (keydown.escape)="close('escape')" disableClose>
+    <mat-accordion>
+      <mat-expansion-panel>
+        <mat-expansion-panel-header>
+          <mat-panel-title>
+            basic
+          </mat-panel-title>
+          <mat-panel-description>
+          </mat-panel-description>
+        </mat-expansion-panel-header>
 
-                  </mat-accordion>
+        <mat-list>
+          <mat-list-item>
+            <p><button routerLinkActive="active-link" mat-button (click)="close('BasicWorld')">BasicWorld</button></p>
+          </mat-list-item>
+          <mat-list-item>
+            <p><button routerLinkActive="active-link" mat-button (click)="close('BasicSprite')">BasicSprite</button></p>
+          </mat-list-item>
+          <mat-list-item>
+            <p><button routerLinkActive="active-link" mat-button
+                (click)="close('BasicFixedSize')">BasicFixedSize</button></p>
+          </mat-list-item>
+        </mat-list>
+      </mat-expansion-panel>
 
-    </mat-sidenav>
+      <mat-expansion-panel>
+        <mat-expansion-panel-header>
+          <mat-panel-title>
+            example
+          </mat-panel-title>
+          <mat-panel-description>
+          </mat-panel-description>
+        </mat-expansion-panel-header>
 
-    <mat-sidenav-content>
-        <button mat-button class="floatRight" (click)="sidenav.open()">+</button>
-        
-        <router-outlet></router-outlet>
+        <mat-list>
+          <mat-list-item>
+            <p><button routerLinkActive="active-link" mat-button (click)="close('AlphaAdjust')">AlphaAdjust</button></p>
+          </mat-list-item>
 
-    </mat-sidenav-content>
+        </mat-list>
+      </mat-expansion-panel>
+
+    </mat-accordion>
+
+  </mat-sidenav>
+
+  <mat-sidenav-content>
+    <button mat-button class="floatRight" (click)="sidenav.open()">+</button>
+
+    <router-outlet></router-outlet>
+
+  </mat-sidenav-content>
 </mat-sidenav-container>

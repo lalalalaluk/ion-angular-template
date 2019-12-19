@@ -7,6 +7,7 @@ export class BootScene extends Phaser.Scene {
     img1: Phaser.GameObjects.Image;
     sprite1: Phaser.GameObjects.Sprite;
 
+
     constructor() {
         super({
             key: 'BootScene'
@@ -19,10 +20,6 @@ export class BootScene extends Phaser.Scene {
         // window.focus();
         // this.resize();
         // window.addEventListener('resize', this.resize, false);
-
-        document.addEventListener('keyup', () => {
-            alert('basic sprite');
-        });
     }
 
     // resize() {
@@ -63,17 +60,24 @@ export class BootScene extends Phaser.Scene {
         this.load.image('dead14', 'assets/boy/dead15.png');
 
         this.load.spritesheet('jump_sheet', 'assets/boy/tttt.png', { frameWidth: 616, frameHeight: 566, endFrame: 10 });
+
     }
 
     create() {
-        this.scale.startFullscreen();
+        const cellWidth = this.cameras.main.width / 100;
+        const cellHeight = this.cameras.main.height / 100;
 
         // image 跟 sprite 最大的差別就是 sprite 可以sprite sheet
-        this.img1 = this.add.image(200, 300, 'img1');
+        this.img1 = this.add.image(cellWidth * 30, cellHeight * 30, 'img1');
+        this.img1.displayWidth = cellWidth * 30;
+        this.img1.displayHeight = this.img1.height * this.img1.displayWidth / this.
+        img1.width;
 
         // // sprite animation by imgs
         this.anims.create(animationConfig.boyDead);
-        this.add.sprite(600, 300, 'dead0').play('dead');
+        const animate1 = this.add.sprite(cellWidth * 50, cellHeight * 30, 'dead0').play('dead');
+        animate1.displayWidth = cellWidth * 30;
+        animate1.displayHeight = animate1.height * animate1.displayWidth / animate1.width;
 
 
         // andorid瀏覽器有MAX_TEXTURE_SIZE限制，spritesheet不能太長
@@ -83,8 +87,12 @@ export class BootScene extends Phaser.Scene {
             frameRate: 12,
             repeat: -1
         });
-        const jump = this.add.sprite(900, 300, 'jump_sheet');
+        const jump = this.add.sprite(cellWidth * 70, cellHeight * 30, 'jump_sheet');
+        jump.displayWidth = cellWidth * 30;
+        jump.displayHeight = jump.height * jump.displayWidth / jump.width;
         jump.anims.play('jump', false);
 
+
     }
+
 }

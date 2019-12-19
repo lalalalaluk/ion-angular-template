@@ -12,6 +12,7 @@ import { AppRoutingModule } from './app.routing.model';
 import { BasicWorldComponent } from './basic/basic-world/basic-world.component';
 import { BasicSpriteComponent } from './basic/basic-sprite/basic-sprite.component';
 import { BasicFixedSizeComponent } from './basic/basic-fixed-size/basic-fixed-size.component';
+import { AlphaAdjustComponent } from './example/alpha-adjust/alpha-adjust.component';
 
 
 @NgModule({
@@ -20,6 +21,7 @@ import { BasicFixedSizeComponent } from './basic/basic-fixed-size/basic-fixed-si
     BasicWorldComponent,
     BasicSpriteComponent,
     BasicFixedSizeComponent,
+    AlphaAdjustComponent,
 
   ],
   imports: [
