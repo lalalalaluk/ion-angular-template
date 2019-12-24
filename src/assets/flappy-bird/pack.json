@@ -1,0 +1,25 @@
+{
+  "preload": {
+    "files": [
+      {
+        "type": "image",
+        "key": "background",
+        "url": "./assets/flappy-bird/images/bg.png"
+      },
+      {
+        "type": "image",
+        "key": "bird",
+        "url": "./assets/flappy-bird/images/bird.png"
+      },
+      {
+        "type": "spritesheet",
+        "key": "pipe",
+        "url": "./assets/flappy-bird/sprites/pipe.png",
+        "frameConfig": {
+          "frameWidth": 20,
+          "frameHeight": 20
+        }
+      }
+    ]
+  }
+}

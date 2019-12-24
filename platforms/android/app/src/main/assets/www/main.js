@@ -67,7 +67,7 @@ module.exports = webpackAsyncContext;
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = ("<mat-sidenav-container class=\"example-container\" (backdropClick)=\"close('')\">\r\n    <mat-sidenav #sidenav (keydown.escape)=\"close('escape')\" disableClose>\r\n            <mat-accordion>\r\n                    <mat-expansion-panel>\r\n                      <mat-expansion-panel-header>\r\n                        <mat-panel-title>\r\n                          basic\r\n                        </mat-panel-title>\r\n                        <mat-panel-description>\r\n                          basic practice\r\n                        </mat-panel-description>\r\n                      </mat-expansion-panel-header>\r\n                  \r\n                      <mat-list>\r\n                            <mat-list-item>\r\n                                <p><button routerLinkActive=\"active-link\" mat-button (click)=\"close('BasicWorld')\">BasicWorld</button></p>\r\n                            </mat-list-item>\r\n                            <mat-list-item>\r\n                                <p><button routerLinkActive=\"active-link\" mat-button (click)=\"close('BasicSprite')\">BasicSprite</button></p>\r\n                            </mat-list-item>\r\n                            <mat-list-item>\r\n                                <p><button routerLinkActive=\"active-link\" mat-button (click)=\"close('BasicFixedSize')\">BasicFixedSize</button></p>\r\n                            </mat-list-item>\r\n                        </mat-list>\r\n                    </mat-expansion-panel>\r\n\r\n                  </mat-accordion>\r\n\r\n    </mat-sidenav>\r\n\r\n    <mat-sidenav-content>\r\n        <button mat-button class=\"floatRight\" (click)=\"sidenav.open()\">+</button>\r\n        \r\n        <router-outlet></router-outlet>\r\n\r\n    </mat-sidenav-content>\r\n</mat-sidenav-container>");
+/* harmony default export */ __webpack_exports__["default"] = ("<mat-sidenav-container class=\"example-container\" (backdropClick)=\"close('')\">\r\n  <mat-sidenav #sidenav (keydown.escape)=\"close('escape')\" disableClose>\r\n    <mat-accordion>\r\n      <mat-expansion-panel>\r\n        <mat-expansion-panel-header>\r\n          <mat-panel-title>\r\n            basic\r\n          </mat-panel-title>\r\n          <mat-panel-description>\r\n          </mat-panel-description>\r\n        </mat-expansion-panel-header>\r\n\r\n        <mat-list>\r\n          <mat-list-item>\r\n            <p><button routerLinkActive=\"active-link\" mat-button (click)=\"close('BasicWorld')\">BasicWorld</button></p>\r\n          </mat-list-item>\r\n          <mat-list-item>\r\n            <p><button routerLinkActive=\"active-link\" mat-button (click)=\"close('BasicSprite')\">BasicSprite</button></p>\r\n          </mat-list-item>\r\n          <mat-list-item>\r\n            <p><button routerLinkActive=\"active-link\" mat-button\r\n                (click)=\"close('BasicFixedSize')\">BasicFixedSize</button></p>\r\n          </mat-list-item>\r\n        </mat-list>\r\n      </mat-expansion-panel>\r\n\r\n      <mat-expansion-panel>\r\n        <mat-expansion-panel-header>\r\n          <mat-panel-title>\r\n            example\r\n          </mat-panel-title>\r\n          <mat-panel-description>\r\n          </mat-panel-description>\r\n        </mat-expansion-panel-header>\r\n\r\n        <mat-list>\r\n          <mat-list-item>\r\n            <p><button routerLinkActive=\"active-link\" mat-button (click)=\"close('AlphaAdjust')\">AlphaAdjust</button></p>\r\n          </mat-list-item>\r\n          <mat-list-item>\r\n            <p><button routerLinkActive=\"active-link\" mat-button (click)=\"close('CoinChaser')\">CoinChaser</button></p>\r\n          </mat-list-item>\r\n          <mat-list-item>\r\n            <p><button routerLinkActive=\"active-link\" mat-button (click)=\"close('FlappyBird')\">FlappyBird</button></p>\r\n          </mat-list-item>\r\n        </mat-list>\r\n      </mat-expansion-panel>\r\n\r\n    </mat-accordion>\r\n\r\n  </mat-sidenav>\r\n\r\n  <mat-sidenav-content>\r\n    <button mat-button class=\"floatRight\" (click)=\"sidenav.open()\">+</button>\r\n\r\n    <router-outlet></router-outlet>\r\n\r\n  </mat-sidenav-content>\r\n</mat-sidenav-container>");
 
 /***/ }),
 
@@ -101,6 +101,45 @@ __webpack_require__.r(__webpack_exports__);
 /*!****************************************************************************************************!*\
   !*** ./node_modules/raw-loader/dist/cjs.js!./src/app/basic/basic-world/basic-world.component.html ***!
   \****************************************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony default export */ __webpack_exports__["default"] = ("<div class=\"both-center\" *ngIf=\"game\">\n    <ion-phaser [game]=\"game\"></ion-phaser>\n</div>");
+
+/***/ }),
+
+/***/ "./node_modules/raw-loader/dist/cjs.js!./src/app/example/alpha-adjust/alpha-adjust.component.html":
+/*!********************************************************************************************************!*\
+  !*** ./node_modules/raw-loader/dist/cjs.js!./src/app/example/alpha-adjust/alpha-adjust.component.html ***!
+  \********************************************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony default export */ __webpack_exports__["default"] = ("<div class=\"both-center\" *ngIf=\"game\">\n    <ion-phaser [game]=\"game\"></ion-phaser>\n</div>");
+
+/***/ }),
+
+/***/ "./node_modules/raw-loader/dist/cjs.js!./src/app/example/coin-chaser/coin-chaser.component.html":
+/*!******************************************************************************************************!*\
+  !*** ./node_modules/raw-loader/dist/cjs.js!./src/app/example/coin-chaser/coin-chaser.component.html ***!
+  \******************************************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony default export */ __webpack_exports__["default"] = ("<div class=\"both-center\" *ngIf=\"game\">\n    <ion-phaser [game]=\"game\"></ion-phaser>\n</div>");
+
+/***/ }),
+
+/***/ "./node_modules/raw-loader/dist/cjs.js!./src/app/example/flappy-bird/flappy-bird.component.html":
+/*!******************************************************************************************************!*\
+  !*** ./node_modules/raw-loader/dist/cjs.js!./src/app/example/flappy-bird/flappy-bird.component.html ***!
+  \******************************************************************************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -422,6 +461,12 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _basic_basic_world_basic_world_component__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./basic/basic-world/basic-world.component */ "./src/app/basic/basic-world/basic-world.component.ts");
 /* harmony import */ var _basic_basic_sprite_basic_sprite_component__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./basic/basic-sprite/basic-sprite.component */ "./src/app/basic/basic-sprite/basic-sprite.component.ts");
 /* harmony import */ var _basic_basic_fixed_size_basic_fixed_size_component__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ./basic/basic-fixed-size/basic-fixed-size.component */ "./src/app/basic/basic-fixed-size/basic-fixed-size.component.ts");
+/* harmony import */ var _example_alpha_adjust_alpha_adjust_component__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ./example/alpha-adjust/alpha-adjust.component */ "./src/app/example/alpha-adjust/alpha-adjust.component.ts");
+/* harmony import */ var _example_coin_chaser_coin_chaser_component__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ./example/coin-chaser/coin-chaser.component */ "./src/app/example/coin-chaser/coin-chaser.component.ts");
+/* harmony import */ var _example_flappy_bird_flappy_bird_component__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! ./example/flappy-bird/flappy-bird.component */ "./src/app/example/flappy-bird/flappy-bird.component.ts");
+
+
+
 
 
 
@@ -445,6 +490,9 @@ var AppModule = /** @class */ (function () {
                 _basic_basic_world_basic_world_component__WEBPACK_IMPORTED_MODULE_10__["BasicWorldComponent"],
                 _basic_basic_sprite_basic_sprite_component__WEBPACK_IMPORTED_MODULE_11__["BasicSpriteComponent"],
                 _basic_basic_fixed_size_basic_fixed_size_component__WEBPACK_IMPORTED_MODULE_12__["BasicFixedSizeComponent"],
+                _example_alpha_adjust_alpha_adjust_component__WEBPACK_IMPORTED_MODULE_13__["AlphaAdjustComponent"],
+                _example_coin_chaser_coin_chaser_component__WEBPACK_IMPORTED_MODULE_14__["CoinChaserComponent"],
+                _example_flappy_bird_flappy_bird_component__WEBPACK_IMPORTED_MODULE_15__["FlappyBirdComponent"],
             ],
             imports: [
                 _angular_platform_browser__WEBPACK_IMPORTED_MODULE_1__["BrowserModule"],
@@ -483,6 +531,12 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _basic_basic_world_basic_world_component__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./basic/basic-world/basic-world.component */ "./src/app/basic/basic-world/basic-world.component.ts");
 /* harmony import */ var _basic_basic_sprite_basic_sprite_component__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./basic/basic-sprite/basic-sprite.component */ "./src/app/basic/basic-sprite/basic-sprite.component.ts");
 /* harmony import */ var _basic_basic_fixed_size_basic_fixed_size_component__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./basic/basic-fixed-size/basic-fixed-size.component */ "./src/app/basic/basic-fixed-size/basic-fixed-size.component.ts");
+/* harmony import */ var _example_alpha_adjust_alpha_adjust_component__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./example/alpha-adjust/alpha-adjust.component */ "./src/app/example/alpha-adjust/alpha-adjust.component.ts");
+/* harmony import */ var _example_coin_chaser_coin_chaser_component__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./example/coin-chaser/coin-chaser.component */ "./src/app/example/coin-chaser/coin-chaser.component.ts");
+/* harmony import */ var _example_flappy_bird_flappy_bird_component__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./example/flappy-bird/flappy-bird.component */ "./src/app/example/flappy-bird/flappy-bird.component.ts");
+
+
+
 
 
 
@@ -490,10 +544,13 @@ __webpack_require__.r(__webpack_exports__);
 
 
 var routes = [
-    { path: '', redirectTo: 'BasicSprite', pathMatch: 'full' },
+    { path: '', redirectTo: 'FlappyBird', pathMatch: 'full' },
     { path: 'BasicWorld', component: _basic_basic_world_basic_world_component__WEBPACK_IMPORTED_MODULE_3__["BasicWorldComponent"] },
     { path: 'BasicSprite', component: _basic_basic_sprite_basic_sprite_component__WEBPACK_IMPORTED_MODULE_4__["BasicSpriteComponent"] },
     { path: 'BasicFixedSize', component: _basic_basic_fixed_size_basic_fixed_size_component__WEBPACK_IMPORTED_MODULE_5__["BasicFixedSizeComponent"] },
+    { path: 'AlphaAdjust', component: _example_alpha_adjust_alpha_adjust_component__WEBPACK_IMPORTED_MODULE_6__["AlphaAdjustComponent"] },
+    { path: 'CoinChaser', component: _example_coin_chaser_coin_chaser_component__WEBPACK_IMPORTED_MODULE_7__["CoinChaserComponent"] },
+    { path: 'FlappyBird', component: _example_flappy_bird_flappy_bird_component__WEBPACK_IMPORTED_MODULE_8__["FlappyBirdComponent"] },
 ];
 var AppRoutingModule = /** @class */ (function () {
     function AppRoutingModule() {
@@ -555,6 +612,7 @@ var BootScene = /** @class */ (function (_super) {
             strokeThickness: 8,
             fill: '#ffffff'
         }).setInteractive();
+        this.helloWorld.setOrigin(0.5, 0.5);
         this.helloWorld.on('pointerup', function () {
             _this.scale.startFullscreen();
         }, this);
@@ -838,6 +896,7 @@ var BootScene = /** @class */ (function (_super) {
             font: '40px Arial',
             fill: '#ffffff'
         }).setInteractive();
+        this.helloWorld.setOrigin(0.5, 0.5);
         this.helloWorld.on('pointerup', function () {
             _this.scale.startFullscreen();
         }, this);
@@ -871,6 +930,1019 @@ var BasicWorldComponent = /** @class */ (function () {
     ], BasicWorldComponent);
     return BasicWorldComponent;
 }());
+
+
+
+/***/ }),
+
+/***/ "./src/app/example/alpha-adjust/alpha-adjust.component.css":
+/*!*****************************************************************!*\
+  !*** ./src/app/example/alpha-adjust/alpha-adjust.component.css ***!
+  \*****************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony default export */ __webpack_exports__["default"] = ("@font-face{\r\n    font-family:\"Connection\";\r\n    src:url('Connection.ttf') \r\nformat(\"truetype\")}\r\n\r\nh3{font-family:\"Connection\",cursive;padding:0;font-size:30px}\r\n\r\ndiv{\r\n    font-family:\"Connection\";\r\n}\r\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvZXhhbXBsZS9hbHBoYS1hZGp1c3QvYWxwaGEtYWRqdXN0LmNvbXBvbmVudC5jc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7SUFDSSx3QkFBd0I7SUFDeEI7a0JBQ2M7O0FBRWxCLEdBQUcsZ0NBQWdDLENBQUMsU0FBUyxDQUFDLGNBQWM7O0FBRTVEO0lBQ0ksd0JBQXdCO0FBQzVCIiwiZmlsZSI6InNyYy9hcHAvZXhhbXBsZS9hbHBoYS1hZGp1c3QvYWxwaGEtYWRqdXN0LmNvbXBvbmVudC5jc3MiLCJzb3VyY2VzQ29udGVudCI6WyJAZm9udC1mYWNle1xyXG4gICAgZm9udC1mYW1pbHk6XCJDb25uZWN0aW9uXCI7XHJcbiAgICBzcmM6dXJsKFwiLi4vLi4vLi4vYXNzZXRzL2ZvbnQvQ29ubmVjdGlvbi50dGZcIikgXHJcbmZvcm1hdChcInRydWV0eXBlXCIpfVxyXG5cclxuaDN7Zm9udC1mYW1pbHk6XCJDb25uZWN0aW9uXCIsY3Vyc2l2ZTtwYWRkaW5nOjA7Zm9udC1zaXplOjMwcHh9XHJcblxyXG5kaXZ7XHJcbiAgICBmb250LWZhbWlseTpcIkNvbm5lY3Rpb25cIjtcclxufSJdfQ== */");
+
+/***/ }),
+
+/***/ "./src/app/example/alpha-adjust/alpha-adjust.component.ts":
+/*!****************************************************************!*\
+  !*** ./src/app/example/alpha-adjust/alpha-adjust.component.ts ***!
+  \****************************************************************/
+/*! exports provided: AlphaAdjustComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "AlphaAdjustComponent", function() { return AlphaAdjustComponent; });
+/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+/* harmony import */ var _scene_GameScene__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./scene/GameScene */ "./src/app/example/alpha-adjust/scene/GameScene.ts");
+
+
+
+var AlphaAdjustComponent = /** @class */ (function () {
+    function AlphaAdjustComponent() {
+        this.game = {
+            width: 800,
+            height: 600,
+            version: '1.0',
+            type: Phaser.AUTO,
+            scene: _scene_GameScene__WEBPACK_IMPORTED_MODULE_2__["GameScene"],
+            render: { pixelArt: true, antialias: false },
+            scale: {
+                mode: Phaser.Scale.FIT,
+                autoCenter: Phaser.Scale.CENTER_BOTH
+            },
+        };
+    }
+    AlphaAdjustComponent.prototype.ngOnInit = function () {
+        console.log('game', this.game);
+    };
+    AlphaAdjustComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
+            selector: 'app-alpha-adjust',
+            template: tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(/*! raw-loader!./alpha-adjust.component.html */ "./node_modules/raw-loader/dist/cjs.js!./src/app/example/alpha-adjust/alpha-adjust.component.html")).default,
+            styles: [tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(/*! ./alpha-adjust.component.css */ "./src/app/example/alpha-adjust/alpha-adjust.component.css")).default]
+        })
+    ], AlphaAdjustComponent);
+    return AlphaAdjustComponent;
+}());
+
+
+
+/***/ }),
+
+/***/ "./src/app/example/alpha-adjust/objects/clone-crystal.ts":
+/*!***************************************************************!*\
+  !*** ./src/app/example/alpha-adjust/objects/clone-crystal.ts ***!
+  \***************************************************************/
+/*! exports provided: CloneCrystal */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "CloneCrystal", function() { return CloneCrystal; });
+/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
+/* harmony import */ var phaser__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! phaser */ "./node_modules/phaser/src/phaser.js");
+/* harmony import */ var phaser__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(phaser__WEBPACK_IMPORTED_MODULE_1__);
+
+
+var CloneCrystal = /** @class */ (function (_super) {
+    tslib__WEBPACK_IMPORTED_MODULE_0__["__extends"](CloneCrystal, _super);
+    function CloneCrystal(params) {
+        var _this = _super.call(this, params.scene, params.x, params.y, params.key) || this;
+        _this.initVariables();
+        _this.initImage();
+        _this.scene.add.existing(_this);
+        return _this;
+    }
+    CloneCrystal.prototype.initVariables = function () {
+        this.increaseAlpha = false;
+    };
+    CloneCrystal.prototype.initImage = function () {
+        this.setOrigin(0.5);
+        this.setScale(2);
+        this.setAlpha(1);
+    };
+    CloneCrystal.prototype.update = function () {
+        this.updateAlphaOfCloneCrystal();
+        this.checkIfAlphaOutOfRange();
+    };
+    CloneCrystal.prototype.updateAlphaOfCloneCrystal = function () {
+        if (this.increaseAlpha) {
+            this.alpha += 0.01;
+        }
+        else {
+            this.alpha -= 0.01;
+        }
+    };
+    CloneCrystal.prototype.checkIfAlphaOutOfRange = function () {
+        if (this.alpha === 0) {
+            this.increaseAlpha = true;
+            this.alpha = 0;
+        }
+        else if (this.alpha === 1) {
+            this.increaseAlpha = false;
+            this.alpha = 1;
+        }
+    };
+    return CloneCrystal;
+}(phaser__WEBPACK_IMPORTED_MODULE_1__["GameObjects"].Image));
+
+
+
+/***/ }),
+
+/***/ "./src/app/example/alpha-adjust/objects/original-crystal.ts":
+/*!******************************************************************!*\
+  !*** ./src/app/example/alpha-adjust/objects/original-crystal.ts ***!
+  \******************************************************************/
+/*! exports provided: OriginalCrystal */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "OriginalCrystal", function() { return OriginalCrystal; });
+/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
+/* harmony import */ var phaser__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! phaser */ "./node_modules/phaser/src/phaser.js");
+/* harmony import */ var phaser__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(phaser__WEBPACK_IMPORTED_MODULE_1__);
+
+
+var OriginalCrystal = /** @class */ (function (_super) {
+    tslib__WEBPACK_IMPORTED_MODULE_0__["__extends"](OriginalCrystal, _super);
+    function OriginalCrystal(params) {
+        var _this = _super.call(this, params.scene, params.x, params.y, params.key) || this;
+        _this.initVariables(params);
+        _this.initImage();
+        _this.scene.add.existing(_this);
+        return _this;
+    }
+    OriginalCrystal.prototype.initVariables = function (params) {
+        this.randomAlpha = params.alpha;
+    };
+    OriginalCrystal.prototype.initImage = function () {
+        this.setOrigin(0.5);
+        this.setScale(2);
+        this.setAlpha(this.randomAlpha);
+    };
+    return OriginalCrystal;
+}(phaser__WEBPACK_IMPORTED_MODULE_1__["GameObjects"].Image));
+
+
+
+/***/ }),
+
+/***/ "./src/app/example/alpha-adjust/scene/GameScene.ts":
+/*!*********************************************************!*\
+  !*** ./src/app/example/alpha-adjust/scene/GameScene.ts ***!
+  \*********************************************************/
+/*! exports provided: GameScene */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "GameScene", function() { return GameScene; });
+/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
+/* harmony import */ var phaser__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! phaser */ "./node_modules/phaser/src/phaser.js");
+/* harmony import */ var phaser__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(phaser__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _objects_clone_crystal__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../objects/clone-crystal */ "./src/app/example/alpha-adjust/objects/clone-crystal.ts");
+/* harmony import */ var _objects_original_crystal__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../objects/original-crystal */ "./src/app/example/alpha-adjust/objects/original-crystal.ts");
+
+
+
+
+var GameScene = /** @class */ (function (_super) {
+    tslib__WEBPACK_IMPORTED_MODULE_0__["__extends"](GameScene, _super);
+    function GameScene() {
+        return _super.call(this, {
+            key: 'GameScene'
+        }) || this;
+    }
+    GameScene.prototype.preload = function () {
+        this.load.image('crystal', 'assets/alpha-adjust/crystal.png');
+    };
+    GameScene.prototype.init = function () {
+        this.playerHasClicked = false;
+        this.alphaDifferenceText = null;
+        this.feedbackText = null;
+    };
+    GameScene.prototype.create = function () {
+        var _this = this;
+        this.cloneCrystal = new _objects_clone_crystal__WEBPACK_IMPORTED_MODULE_2__["CloneCrystal"]({
+            scene: this,
+            x: this.sys.canvas.width / 2 + 150,
+            y: this.sys.canvas.height / 2 - 30,
+            key: 'crystal',
+        });
+        this.originalCrystal = new _objects_original_crystal__WEBPACK_IMPORTED_MODULE_3__["OriginalCrystal"]({
+            scene: this,
+            x: this.sys.canvas.width / 2 - 150,
+            y: this.sys.canvas.height / 2 - 30,
+            key: 'crystal',
+            alpha: phaser__WEBPACK_IMPORTED_MODULE_1__["Math"].Between(0, 100) / 100
+        });
+        this.input.on('pointerdown', function (pointer) {
+            if (!_this.playerHasClicked) {
+                _this.playerHasClicked = true;
+            }
+            else {
+                _this.scene.restart();
+            }
+        }, this);
+    };
+    GameScene.prototype.update = function () {
+        if (!this.playerHasClicked) {
+            this.cloneCrystal.update();
+            this.showResult = false;
+        }
+        else {
+            if (!this.showResult) {
+                var difference = this.clculateAlphaDifference();
+                this.createResultTexts(difference);
+            }
+        }
+    };
+    GameScene.prototype.clculateAlphaDifference = function () {
+        return Math.abs(this.cloneCrystal.alpha - this.originalCrystal.alpha);
+    };
+    GameScene.prototype.createResultTexts = function (difference) {
+        this.alphaDifferenceText = this.add.text(this.sys.canvas.width / 2, this.sys.canvas.height / 2 + 120, 'You : ' + this.cloneCrystal.alpha.toFixed(2), {
+            fontFamily: 'Connection',
+            fontSize: 80,
+            stroke: '#000000',
+            strokeThickness: 8,
+            fill: '#ffffff'
+        });
+        this.alphaDifferenceText.setOrigin(0.5);
+        this.alphaDifferenceText = this.add.text(this.sys.canvas.width / 2, this.sys.canvas.height / 2 + 220, 'Actual : ' + this.originalCrystal.alpha.toFixed(2), {
+            fontFamily: 'Connection',
+            fontSize: 80,
+            stroke: '#000000',
+            strokeThickness: 8,
+            fill: '#ffffff'
+        });
+        this.alphaDifferenceText.setOrigin(0.5);
+        var textConfig = {
+            fontFamily: 'Connection',
+            fontSize: 50,
+            stroke: '#000000',
+            strokeThickness: 8,
+            fill: '#ffffff'
+        };
+        var commentText;
+        if (difference >= 0.5) {
+            commentText = 'You can do better!';
+        }
+        else if (difference < 0.5 && difference >= 0.3) {
+            commentText = 'OK!';
+        }
+        else if (difference < 0.3 && difference >= 0.1) {
+            commentText = 'Great!';
+        }
+        else if (difference < 0.1) {
+            commentText = 'Wonderful!';
+        }
+        this.feedbackText = this.add.text(this.sys.canvas.width / 2, this.sys.canvas.height / 2 - 150, commentText, textConfig);
+        this.feedbackText.setOrigin(0.5);
+        this.showResult = true;
+    };
+    return GameScene;
+}(phaser__WEBPACK_IMPORTED_MODULE_1__["Scene"]));
+
+
+
+/***/ }),
+
+/***/ "./src/app/example/coin-chaser/coin-chaser.component.css":
+/*!***************************************************************!*\
+  !*** ./src/app/example/coin-chaser/coin-chaser.component.css ***!
+  \***************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony default export */ __webpack_exports__["default"] = ("\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzcmMvYXBwL2V4YW1wbGUvY29pbi1jaGFzZXIvY29pbi1jaGFzZXIuY29tcG9uZW50LmNzcyJ9 */");
+
+/***/ }),
+
+/***/ "./src/app/example/coin-chaser/coin-chaser.component.ts":
+/*!**************************************************************!*\
+  !*** ./src/app/example/coin-chaser/coin-chaser.component.ts ***!
+  \**************************************************************/
+/*! exports provided: CoinChaserComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "CoinChaserComponent", function() { return CoinChaserComponent; });
+/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+/* harmony import */ var _scene_game_scene__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./scene/game-scene */ "./src/app/example/coin-chaser/scene/game-scene.ts");
+
+
+
+var CoinChaserComponent = /** @class */ (function () {
+    function CoinChaserComponent() {
+        this.game = {
+            width: 768,
+            height: 576,
+            type: Phaser.AUTO,
+            scene: _scene_game_scene__WEBPACK_IMPORTED_MODULE_2__["GameScene"],
+            render: { pixelArt: true, antialias: false },
+            scale: {
+                mode: Phaser.Scale.FIT,
+                autoCenter: Phaser.Scale.CENTER_BOTH
+            },
+            input: {
+                keyboard: true
+            },
+            backgroundColor: '#3A99D9',
+        };
+    }
+    CoinChaserComponent.prototype.ngOnInit = function () {
+    };
+    CoinChaserComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
+            selector: 'app-coin-chaser',
+            template: tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(/*! raw-loader!./coin-chaser.component.html */ "./node_modules/raw-loader/dist/cjs.js!./src/app/example/coin-chaser/coin-chaser.component.html")).default,
+            styles: [tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(/*! ./coin-chaser.component.css */ "./src/app/example/coin-chaser/coin-chaser.component.css")).default]
+        })
+    ], CoinChaserComponent);
+    return CoinChaserComponent;
+}());
+
+
+
+/***/ }),
+
+/***/ "./src/app/example/coin-chaser/object/Player.ts":
+/*!******************************************************!*\
+  !*** ./src/app/example/coin-chaser/object/Player.ts ***!
+  \******************************************************/
+/*! exports provided: Player */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "Player", function() { return Player; });
+/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
+/* harmony import */ var phaser__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! phaser */ "./node_modules/phaser/src/phaser.js");
+/* harmony import */ var phaser__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(phaser__WEBPACK_IMPORTED_MODULE_1__);
+
+
+var Player = /** @class */ (function (_super) {
+    tslib__WEBPACK_IMPORTED_MODULE_0__["__extends"](Player, _super);
+    function Player(params) {
+        var _this = _super.call(this, params.scene, params.x, params.y, params.key) || this;
+        _this.initVariables();
+        _this.initImage();
+        _this.initInput();
+        _this.scene.add.existing(_this);
+        return _this;
+    }
+    Player.prototype.initVariables = function () {
+        this.walkingSpeed = 5;
+    };
+    Player.prototype.initImage = function () {
+        this.setOrigin(0.5, 0.5);
+    };
+    Player.prototype.initInput = function () {
+        this.cursors = this.scene.input.keyboard.createCursorKeys();
+    };
+    Player.prototype.update = function () {
+        this.handleInput();
+    };
+    Player.prototype.handleInput = function () {
+        if (this.cursors.right.isDown || this.way === 'right') {
+            this.x += this.walkingSpeed;
+            this.setFlipX(false);
+        }
+        else if (this.cursors.left.isDown || this.way === 'left') {
+            this.x -= this.walkingSpeed;
+            this.setFlipX(true);
+        }
+        else if (this.cursors.up.isDown || this.way === 'up') {
+            this.y -= this.walkingSpeed;
+        }
+        else if (this.cursors.down.isDown || this.way === 'down') {
+            this.y += this.walkingSpeed;
+        }
+    };
+    return Player;
+}(phaser__WEBPACK_IMPORTED_MODULE_1__["GameObjects"].Image));
+
+
+
+/***/ }),
+
+/***/ "./src/app/example/coin-chaser/object/coin.ts":
+/*!****************************************************!*\
+  !*** ./src/app/example/coin-chaser/object/coin.ts ***!
+  \****************************************************/
+/*! exports provided: Coin */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "Coin", function() { return Coin; });
+/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
+/* harmony import */ var phaser__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! phaser */ "./node_modules/phaser/src/phaser.js");
+/* harmony import */ var phaser__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(phaser__WEBPACK_IMPORTED_MODULE_1__);
+
+
+var Coin = /** @class */ (function (_super) {
+    tslib__WEBPACK_IMPORTED_MODULE_0__["__extends"](Coin, _super);
+    function Coin(params) {
+        var _this = _super.call(this, params.scene, params.x, params.y, params.key) || this;
+        _this.initVariables();
+        _this.initImage();
+        _this.initEvents();
+        _this.scene.add.existing(_this);
+        return _this;
+    }
+    Coin.prototype.initVariables = function () {
+        this.centerOfScreen = this.scene.sys.canvas.width / 2;
+        this.changePositionTimer = null;
+        this.setFieldSide();
+    };
+    Coin.prototype.initImage = function () {
+        this.setOrigin(0.5, 0.5);
+    };
+    Coin.prototype.initEvents = function () {
+        this.changePositionTimer = this.scene.time.addEvent({
+            delay: 2000,
+            callback: this.changePosition,
+            callbackScope: this,
+            loop: true
+        });
+    };
+    Coin.prototype.changePosition = function () {
+        this.setNewPosition();
+        this.setFieldSide();
+        this.changePositionTimer.reset({
+            delay: 2000,
+            callback: this.changePosition,
+            callbackScope: this,
+            loop: true
+        });
+    };
+    Coin.prototype.setNewPosition = function () {
+        if (this.lastPosition === 'right') {
+            this.x = phaser__WEBPACK_IMPORTED_MODULE_1__["Math"].Between(100, this.centerOfScreen);
+        }
+        else {
+            this.x = phaser__WEBPACK_IMPORTED_MODULE_1__["Math"].Between(385, 700);
+        }
+        this.y = phaser__WEBPACK_IMPORTED_MODULE_1__["Math"].Between(100, 500);
+    };
+    Coin.prototype.setFieldSide = function () {
+        if (this.x <= this.centerOfScreen) {
+            this.lastPosition = 'left';
+        }
+        else {
+            this.lastPosition = 'right';
+        }
+    };
+    return Coin;
+}(phaser__WEBPACK_IMPORTED_MODULE_1__["GameObjects"].Image));
+
+
+
+/***/ }),
+
+/***/ "./src/app/example/coin-chaser/scene/game-scene.ts":
+/*!*********************************************************!*\
+  !*** ./src/app/example/coin-chaser/scene/game-scene.ts ***!
+  \*********************************************************/
+/*! exports provided: GameScene */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "GameScene", function() { return GameScene; });
+/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
+/* harmony import */ var _object_coin__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../object/coin */ "./src/app/example/coin-chaser/object/coin.ts");
+/* harmony import */ var _object_Player__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../object/Player */ "./src/app/example/coin-chaser/object/Player.ts");
+
+
+
+var GameScene = /** @class */ (function (_super) {
+    tslib__WEBPACK_IMPORTED_MODULE_0__["__extends"](GameScene, _super);
+    function GameScene() {
+        return _super.call(this, {
+            key: 'GameScene'
+        }) || this;
+    }
+    GameScene.prototype.preload = function () {
+        this.load.image('background', './assets/coin-chaser/background.png');
+        this.load.image('player', './assets/coin-chaser/player.png');
+        this.load.image('coin', './assets/coin-chaser/coin.png');
+        this.load.image('arrowUp', './assets/gameicons/PNG/Black/1x/arrowUp.png');
+        this.load.image('arrowDown', './assets/gameicons/PNG/Black/1x/arrowDown.png');
+        this.load.image('arrowLeft', './assets/gameicons/PNG/Black/1x/arrowLeft.png');
+        this.load.image('arrowRight', './assets/gameicons/PNG/Black/1x/arrowRight.png');
+    };
+    GameScene.prototype.init = function () {
+        this.collectedCoins = 0;
+    };
+    GameScene.prototype.create = function () {
+        var _this = this;
+        this.background = this.add.image(0, 0, 'background');
+        this.background.setOrigin(0, 0);
+        this.coin = new _object_coin__WEBPACK_IMPORTED_MODULE_1__["Coin"]({
+            scene: this,
+            x: Phaser.Math.Between(100, 700),
+            y: Phaser.Math.Between(100, 500),
+            key: 'coin',
+        });
+        this.player = new _object_Player__WEBPACK_IMPORTED_MODULE_2__["Player"]({
+            scene: this,
+            x: this.sys.canvas.width / 2,
+            y: this.sys.canvas.height / 2,
+            key: 'player',
+        });
+        this.arrowUp = this.add.image(640, 430, 'arrowUp').setInteractive();
+        this.arrowDown = this.add.image(640, 530, 'arrowDown').setInteractive();
+        this.arrowLeft = this.add.image(580, 480, 'arrowLeft').setInteractive();
+        this.arrowRight = this.add.image(700, 480, 'arrowRight').setInteractive();
+        this.arrowUp.on('pointerdown', function () {
+            _this.player.way = 'up';
+        });
+        this.arrowUp.on('pointerup', function () {
+            _this.player.way = 'stop';
+        });
+        this.arrowDown.on('pointerdown', function () {
+            _this.player.way = 'down';
+        });
+        this.arrowDown.on('pointerup', function () {
+            _this.player.way = 'stop';
+        });
+        this.arrowLeft.on('pointerdown', function () {
+            _this.player.way = 'left';
+        });
+        this.arrowLeft.on('pointerup', function () {
+            _this.player.way = 'stop';
+        });
+        this.arrowRight.on('pointerdown', function () {
+            _this.player.way = 'right';
+        });
+        this.arrowRight.on('pointerup', function () {
+            _this.player.way = 'stop';
+        });
+        // create texts
+        this.coinsCollectedText = this.add.text(this.sys.canvas.width / 2, this.sys.canvas.height - 50, this.collectedCoins + '', {
+            fontFamily: 'Connection',
+            fontSize: 38,
+            stroke: '#fff',
+            strokeThickness: 6,
+            fill: '#000000'
+        });
+        this.pointer = this.input.activePointer;
+        this.text = this.add.text(10, 10, 'Move the mouse', { font: '16px Courier', fill: '#00ff00' });
+    };
+    GameScene.prototype.update = function () {
+        this.player.update();
+        this.coin.update();
+        // do the collision check
+        if (Phaser.Geom.Intersects.RectangleToRectangle(this.player.getBounds(), this.coin.getBounds())) {
+            this.updateCoinStatus();
+        }
+        this.text.setText([
+            'x: ' + this.pointer.x,
+            'y: ' + this.pointer.y,
+            'mid x: ' + this.pointer.midPoint.x,
+            'mid y: ' + this.pointer.midPoint.y,
+            'velocity x: ' + this.pointer.velocity.x,
+            'velocity y: ' + this.pointer.velocity.y,
+            'movementX: ' + this.pointer.movementX,
+            'movementY: ' + this.pointer.movementY
+        ]);
+    };
+    GameScene.prototype.updateCoinStatus = function () {
+        this.collectedCoins++;
+        this.coinsCollectedText.setText(this.collectedCoins + '');
+        this.coin.changePosition();
+    };
+    return GameScene;
+}(Phaser.Scene));
+
+
+
+/***/ }),
+
+/***/ "./src/app/example/flappy-bird/flappy-bird.component.css":
+/*!***************************************************************!*\
+  !*** ./src/app/example/flappy-bird/flappy-bird.component.css ***!
+  \***************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony default export */ __webpack_exports__["default"] = ("@font-face{\r\n    font-family:\"Connection\";\r\n    src:url('Connection.ttf') \r\nformat(\"truetype\")}\r\n\r\n\r\n\r\ndiv{\r\n    font-family:\"Connection\",cursive;\r\n    padding:0;\r\n    font-size:30px\r\n}\r\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvZXhhbXBsZS9mbGFwcHktYmlyZC9mbGFwcHktYmlyZC5jb21wb25lbnQuY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0lBQ0ksd0JBQXdCO0lBQ3hCO2tCQUNjOzs7O0FBSWxCO0lBQ0ksZ0NBQWdDO0lBQ2hDLFNBQVM7SUFDVDtBQUNKIiwiZmlsZSI6InNyYy9hcHAvZXhhbXBsZS9mbGFwcHktYmlyZC9mbGFwcHktYmlyZC5jb21wb25lbnQuY3NzIiwic291cmNlc0NvbnRlbnQiOlsiQGZvbnQtZmFjZXtcclxuICAgIGZvbnQtZmFtaWx5OlwiQ29ubmVjdGlvblwiO1xyXG4gICAgc3JjOnVybChcIi4uLy4uLy4uL2Fzc2V0cy9mb250L0Nvbm5lY3Rpb24udHRmXCIpIFxyXG5mb3JtYXQoXCJ0cnVldHlwZVwiKX1cclxuXHJcblxyXG5cclxuZGl2e1xyXG4gICAgZm9udC1mYW1pbHk6XCJDb25uZWN0aW9uXCIsY3Vyc2l2ZTtcclxuICAgIHBhZGRpbmc6MDtcclxuICAgIGZvbnQtc2l6ZTozMHB4XHJcbn0iXX0= */");
+
+/***/ }),
+
+/***/ "./src/app/example/flappy-bird/flappy-bird.component.ts":
+/*!**************************************************************!*\
+  !*** ./src/app/example/flappy-bird/flappy-bird.component.ts ***!
+  \**************************************************************/
+/*! exports provided: FlappyBirdComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "FlappyBirdComponent", function() { return FlappyBirdComponent; });
+/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+/* harmony import */ var _scene_boot_scene__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./scene/boot-scene */ "./src/app/example/flappy-bird/scene/boot-scene.ts");
+/* harmony import */ var phaser__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! phaser */ "./node_modules/phaser/src/phaser.js");
+/* harmony import */ var phaser__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(phaser__WEBPACK_IMPORTED_MODULE_3__);
+
+
+
+
+var FlappyBirdComponent = /** @class */ (function () {
+    function FlappyBirdComponent() {
+        this.game = {
+            width: 390,
+            height: 600,
+            type: phaser__WEBPACK_IMPORTED_MODULE_3__["AUTO"],
+            scene: [_scene_boot_scene__WEBPACK_IMPORTED_MODULE_2__["BootScene"]],
+            render: { pixelArt: true, antialias: false },
+            scale: {
+                mode: phaser__WEBPACK_IMPORTED_MODULE_3__["Scale"].FIT,
+                autoCenter: phaser__WEBPACK_IMPORTED_MODULE_3__["Scale"].CENTER_BOTH
+            },
+            input: {
+                keyboard: true
+            },
+            physics: {
+                default: 'arcade',
+                arcade: {
+                    gravity: { y: 300 }
+                }
+            },
+            backgroundColor: '#98d687',
+        };
+    }
+    FlappyBirdComponent.prototype.ngOnInit = function () {
+    };
+    FlappyBirdComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
+            selector: 'app-flappy-bird',
+            template: tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(/*! raw-loader!./flappy-bird.component.html */ "./node_modules/raw-loader/dist/cjs.js!./src/app/example/flappy-bird/flappy-bird.component.html")).default,
+            styles: [tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(/*! ./flappy-bird.component.css */ "./src/app/example/flappy-bird/flappy-bird.component.css")).default]
+        })
+    ], FlappyBirdComponent);
+    return FlappyBirdComponent;
+}());
+
+
+
+/***/ }),
+
+/***/ "./src/app/example/flappy-bird/object/bird.ts":
+/*!****************************************************!*\
+  !*** ./src/app/example/flappy-bird/object/bird.ts ***!
+  \****************************************************/
+/*! exports provided: Bird */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "Bird", function() { return Bird; });
+/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
+/* harmony import */ var phaser__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! phaser */ "./node_modules/phaser/src/phaser.js");
+/* harmony import */ var phaser__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(phaser__WEBPACK_IMPORTED_MODULE_1__);
+
+
+var Bird = /** @class */ (function (_super) {
+    tslib__WEBPACK_IMPORTED_MODULE_0__["__extends"](Bird, _super);
+    function Bird(params) {
+        var _this = _super.call(this, params.scene, params.x, params.y, params.key) || this;
+        _this.pressDown = false;
+        // image
+        _this.setScale(3);
+        _this.setOrigin(0, 0);
+        // variables
+        _this.isDead = false;
+        _this.isFlapping = false;
+        // physics
+        _this.scene.physics.world.enable(_this);
+        _this.body.setGravityY(1000);
+        _this.body.setSize(17, 12);
+        params.scene.input.on('pointerdown', function (pointer) {
+            _this.pressDown = true;
+        }, _this);
+        params.scene.input.on('pointerup', function (pointer) {
+            _this.pressDown = false;
+        }, _this);
+        _this.scene.add.existing(_this);
+        return _this;
+    }
+    Bird.prototype.getDead = function () {
+        return this.isDead;
+    };
+    Bird.prototype.setDead = function (dead) {
+        this.isDead = dead;
+    };
+    Bird.prototype.update = function () {
+        if (this.pressDown && !this.isFlapping) {
+            this.isFlapping = false;
+            this.body.setVelocityY(-350);
+            this.scene.tweens.add({
+                targets: this,
+                props: { angle: -20 },
+                duration: 150,
+                ease: 'Power0'
+            });
+        }
+        else if (!this.pressDown && this.isFlapping) {
+            this.isFlapping = false;
+        }
+        // check if off the screen
+        if (this.y + this.height > this.scene.sys.canvas.height) {
+            this.isDead = true;
+        }
+    };
+    return Bird;
+}(phaser__WEBPACK_IMPORTED_MODULE_1__["GameObjects"].Image));
+
+
+
+/***/ }),
+
+/***/ "./src/app/example/flappy-bird/object/pipe.ts":
+/*!****************************************************!*\
+  !*** ./src/app/example/flappy-bird/object/pipe.ts ***!
+  \****************************************************/
+/*! exports provided: Pipe */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "Pipe", function() { return Pipe; });
+/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
+
+var Pipe = /** @class */ (function (_super) {
+    tslib__WEBPACK_IMPORTED_MODULE_0__["__extends"](Pipe, _super);
+    function Pipe(params) {
+        var _this = _super.call(this, params.scene, params.x, params.y, params.key, params.frame) || this;
+        // image
+        _this.setScale(3);
+        _this.setOrigin(0, 0);
+        // physics
+        _this.scene.physics.world.enable(_this);
+        _this.body.allowGravity = false;
+        _this.body.setVelocityX(-200);
+        _this.body.setSize(20, 20);
+        _this.scene.add.existing(_this);
+        return _this;
+    }
+    return Pipe;
+}(Phaser.GameObjects.Image));
+
+
+
+/***/ }),
+
+/***/ "./src/app/example/flappy-bird/scene/boot-scene.ts":
+/*!*********************************************************!*\
+  !*** ./src/app/example/flappy-bird/scene/boot-scene.ts ***!
+  \*********************************************************/
+/*! exports provided: BootScene */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "BootScene", function() { return BootScene; });
+/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
+/* harmony import */ var _main_menu_scene__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./main-menu-scene */ "./src/app/example/flappy-bird/scene/main-menu-scene.ts");
+/* harmony import */ var _game_scene__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./game-scene */ "./src/app/example/flappy-bird/scene/game-scene.ts");
+
+
+
+var BootScene = /** @class */ (function (_super) {
+    tslib__WEBPACK_IMPORTED_MODULE_0__["__extends"](BootScene, _super);
+    function BootScene() {
+        return _super.call(this, {
+            key: 'BootScene',
+        }) || this;
+    }
+    BootScene.prototype.preload = function () {
+        var _this = this;
+        // set the background and create loading bar
+        this.cameras.main.setBackgroundColor(0x98d687);
+        this.createLoadingbar();
+        this.scene.add('MainMenuScene', _main_menu_scene__WEBPACK_IMPORTED_MODULE_1__["MainMenuScene"], false);
+        this.scene.add('GameScene', _game_scene__WEBPACK_IMPORTED_MODULE_2__["GameScene"], false);
+        var title = this.add.text(this.sys.canvas.width / 2, this.sys.canvas.height / 2 - 100, 'loading...', {
+            fontFamily: 'Connection',
+            fontSize: 20
+        });
+        title.setOrigin(0.5);
+        // pass value to change the loading bar fill
+        this.load.on('progress', function (value) {
+            _this.progressBar.clear();
+            _this.progressBar.fillStyle(0xfff6d3, 1);
+            _this.progressBar.fillRect(_this.cameras.main.width / 4, _this.cameras.main.height / 2 - 16, (_this.cameras.main.width / 2) * value, 16);
+        }, this);
+        // delete bar graphics, when loading complete
+        this.load.on('complete', function () {
+            _this.progressBar.destroy();
+            _this.loadingBar.destroy();
+            title.setVisible(false);
+        }, this);
+        // load out package
+        this.load.pack('preload', './assets/flappy-bird/pack.json', 'preload');
+    };
+    BootScene.prototype.update = function () {
+        this.scene.start('MainMenuScene');
+    };
+    BootScene.prototype.createLoadingbar = function () {
+        this.loadingBar = this.add.graphics();
+        this.loadingBar.fillStyle(0x5dae47, 1);
+        this.loadingBar.fillRect(this.cameras.main.width / 4 - 2, this.cameras.main.height / 2 - 18, this.cameras.main.width / 2 + 4, 20);
+        this.progressBar = this.add.graphics();
+    };
+    return BootScene;
+}(Phaser.Scene));
+
+
+
+/***/ }),
+
+/***/ "./src/app/example/flappy-bird/scene/game-scene.ts":
+/*!*********************************************************!*\
+  !*** ./src/app/example/flappy-bird/scene/game-scene.ts ***!
+  \*********************************************************/
+/*! exports provided: GameScene */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "GameScene", function() { return GameScene; });
+/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
+/* harmony import */ var phaser__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! phaser */ "./node_modules/phaser/src/phaser.js");
+/* harmony import */ var phaser__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(phaser__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _object_bird__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../object/bird */ "./src/app/example/flappy-bird/object/bird.ts");
+/* harmony import */ var _object_pipe__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../object/pipe */ "./src/app/example/flappy-bird/object/pipe.ts");
+
+
+
+
+var GameScene = /** @class */ (function (_super) {
+    tslib__WEBPACK_IMPORTED_MODULE_0__["__extends"](GameScene, _super);
+    function GameScene() {
+        return _super.call(this, {
+            key: 'GameScene'
+        }) || this;
+    }
+    GameScene.prototype.init = function () {
+        this.registry.set('score', -1);
+    };
+    GameScene.prototype.create = function () {
+        this.background = this.add
+            .tileSprite(0, 0, 390, 600, 'background')
+            .setOrigin(0, 0);
+        this.bird = new _object_bird__WEBPACK_IMPORTED_MODULE_2__["Bird"]({
+            scene: this,
+            x: 50,
+            y: 100,
+            key: 'bird'
+        });
+        this.scoreText = this.add.text(this.sys.canvas.width / 2 - 14, 30, this.registry.values.score, {
+            fontFamily: 'Connection',
+            fontSize: 30,
+            stroke: '#000000',
+            strokeThickness: 5,
+            fill: '#ffffff'
+        });
+        this.pipes = this.add.group({});
+        this.addNewRowOfPipes();
+        this.timer = this.time.addEvent({
+            delay: 1500,
+            callback: this.addNewRowOfPipes,
+            callbackScope: this,
+            loop: true
+        });
+    };
+    GameScene.prototype.update = function () {
+        var _this = this;
+        if (!this.bird.getDead()) {
+            this.background.tilePositionX += 4;
+            this.bird.update();
+            this.physics.overlap(this.bird, this.pipes, function () {
+                _this.bird.setDead(true);
+            }, null, this);
+        }
+        else {
+            phaser__WEBPACK_IMPORTED_MODULE_1__["Actions"].Call(this.pipes.getChildren(), function (pipe) {
+                pipe.body.setVelocityX(0);
+            }, this);
+            if (this.bird.y > this.sys.canvas.height) {
+                this.scene.start('MainMenuScene');
+            }
+        }
+    };
+    GameScene.prototype.addNewRowOfPipes = function () {
+        // update the score
+        this.registry.values.score += 1;
+        this.scoreText.setText(this.registry.values.score);
+        // randomly pick a number between 1 and 5
+        var hole = Math.floor(Math.random() * 5) + 1;
+        // add 6 pipes with one big hole at position hole and hole + 1
+        for (var i = 0; i < 10; i++) {
+            if (i !== hole && i !== hole + 1 && i !== hole + 2) {
+                if (i === hole - 1) {
+                    this.addPipe(400, i * 60, 0);
+                }
+                else if (i === hole + 3) {
+                    this.addPipe(400, i * 60, 1);
+                }
+                else {
+                    this.addPipe(400, i * 60, 2);
+                }
+            }
+        }
+    };
+    GameScene.prototype.addPipe = function (x, y, frame) {
+        // create a new pipe at the position x and y and add it to group
+        this.pipes.add(new _object_pipe__WEBPACK_IMPORTED_MODULE_3__["Pipe"]({
+            scene: this,
+            x: x,
+            y: y,
+            key: 'pipe',
+            frame: frame,
+        }));
+    };
+    return GameScene;
+}(phaser__WEBPACK_IMPORTED_MODULE_1__["Scene"]));
+
+
+
+/***/ }),
+
+/***/ "./src/app/example/flappy-bird/scene/main-menu-scene.ts":
+/*!**************************************************************!*\
+  !*** ./src/app/example/flappy-bird/scene/main-menu-scene.ts ***!
+  \**************************************************************/
+/*! exports provided: MainMenuScene */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "MainMenuScene", function() { return MainMenuScene; });
+/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
+/* harmony import */ var phaser__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! phaser */ "./node_modules/phaser/src/phaser.js");
+/* harmony import */ var phaser__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(phaser__WEBPACK_IMPORTED_MODULE_1__);
+
+
+var MainMenuScene = /** @class */ (function (_super) {
+    tslib__WEBPACK_IMPORTED_MODULE_0__["__extends"](MainMenuScene, _super);
+    function MainMenuScene() {
+        return _super.call(this, {
+            key: 'mainMenuScene',
+        }) || this;
+    }
+    MainMenuScene.prototype.init = function () {
+        var _this = this;
+        this.input.on('pointerdown', function (pointer) {
+            _this.scene.start('GameScene');
+        }, this);
+    };
+    MainMenuScene.prototype.create = function () {
+        this.background = this.add
+            .tileSprite(0, 0, 390, 600, 'background')
+            .setOrigin(0, 0);
+        var title = this.add.text(this.sys.canvas.width / 2, this.sys.canvas.height / 2 - 100, 'FLAPPY BIRD', {
+            fontFamily: 'Connection',
+            fontSize: 50,
+            stroke: '#000000',
+            strokeThickness: 8,
+            fill: '#ffffff'
+        });
+        title.setOrigin(0.5);
+        var content = this.add.text(this.sys.canvas.width / 2, this.sys.canvas.height / 2, 'Press To PLAY', {
+            fontFamily: 'Connection',
+            fontSize: 20,
+            stroke: '#000000',
+            strokeThickness: 5,
+            fill: '#ffffff'
+        });
+        content.setOrigin(0.5);
+    };
+    MainMenuScene.prototype.update = function () {
+        this.background.tilePositionX += 1;
+    };
+    return MainMenuScene;
+}(phaser__WEBPACK_IMPORTED_MODULE_1__["Scene"]));
 
 
 

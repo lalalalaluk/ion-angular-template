@@ -7,7 +7,7 @@
 /out-tsc
 # Only exists if Bazel was run
 /bazel-out
-/www
+
 
 
 # dependencies
@@ -47,3 +47,4 @@ testem.log
 # System Files
 .DS_Store
 Thumbs.db
+/www
